@@ -47,7 +47,8 @@ const generatePassword = (getLetterLowerCase, getLetterUpperCase, getNumber, get
     generatePasswordElement.querySelector("h4").innerText = password;
 };
 //Eventos
-generatePasswordButton.addEventListener("click" ,() =>{
+generatePasswordButton.addEventListener("click" ,(e) =>{
+    e.preventDefault();
         generatePassword(
         getLetterLowerCase,
         getLetterUpperCase,
@@ -55,3 +56,50 @@ generatePasswordButton.addEventListener("click" ,() =>{
         getSymbol
         );
 });
+//Send Alert
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+  
+    const nameid = document.getElementById('#name').value;
+    const emailid = document.getElementById('#email').value;
+    const passwordid = document.getElementById('#password').value;
+  
+    if (nameid === '' || emailid === '' || passwordid === '') {
+      alert('Por favor, preencha todos os campos.');
+      return;
+    }
+})
+
+// Backend
+const form = document.querySelector('form');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+
+  const data = {
+    name,
+    email
+  };
+
+  fetch('http://localhost:3000/usuarios', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  })
+    .then(response => response.json())
+    .then(result => {
+      // Faça algo com a resposta do servidor
+      console.log(result);
+    })
+    .catch(error => {
+      // Trate o erro
+      console.error('Ocorreu um erro:', error);
+    });
+});
+
+

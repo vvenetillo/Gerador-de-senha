@@ -23,6 +23,8 @@
             <h2>Crie sua conta:</h2>
             <p>Registre-se para utilizar todas as funcionalidades do sistema</p>
             <div class="form-control">
+                <form action="http://localhost:3000/usuarios" method="POST">
+
                 <label for="name">Nome</label>
                 <input type="text" name="name" id="name" placeholder="Digite o seu nome">
             </div>
@@ -45,6 +47,8 @@
                 <input type="password" name="confirmpassword" placeholder="Confirme a sua senha">
             </div>
             <input type="submit" id="btn" value="Cadastrar">
+            </form>
+
         </div>
     </div>
 </body>
