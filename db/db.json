@@ -9,7 +9,13 @@
       "name": "Victor",
       "email": "venetillovictor@gmail.com",
       "id": 2
+    },
+    {
+      "name": "victor",
+      "email": "vene@vene.com",
+      "password": "0123",
+      "confirmpassword": "0123",
+      "id": 3
     }
-   
   ]
 }

@@ -60,9 +60,9 @@ generatePasswordButton.addEventListener("click" ,(e) =>{
 form.addEventListener('submit', (e) => {
     e.preventDefault();
   
-    const nameid = document.getElementById('#name').value;
-    const emailid = document.getElementById('#email').value;
-    const passwordid = document.getElementById('#password').value;
+    const nameid = document.getElementById('name').value;
+    const emailid = document.getElementById('email').value;
+    const passwordid = document.getElementById('password').value;
   
     if (nameid === '' || emailid === '' || passwordid === '') {
       alert('Por favor, preencha todos os campos.');
@@ -84,7 +84,7 @@ form.addEventListener('submit', (e) => {
     email
   };
 
-  fetch('http://localhost:5000/usuarios', {
+  fetch('http://localhost:3000/usuarios', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
