@@ -57,18 +57,18 @@ generatePasswordButton.addEventListener("click" ,(e) =>{
         );
 });
 //Send Alert
-// form.addEventListener('submit', (e) => {
-//     e.preventDefault();
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
   
-//     const nameid = document.getElementById('#name').value;
-//     const emailid = document.getElementById('#email').value;
-//     const passwordid = document.getElementById('#password').value;
+    const nameid = document.getElementById('#name').value;
+    const emailid = document.getElementById('#email').value;
+    const passwordid = document.getElementById('#password').value;
   
-//     if (nameid === '' || emailid === '' || passwordid === '') {
-//       alert('Por favor, preencha todos os campos.');
-//       return;
-//     }
-// })
+    if (nameid === '' || emailid === '' || passwordid === '') {
+      alert('Por favor, preencha todos os campos.');
+      return;
+    }
+})
 
 // Backend
 const form = document.querySelector('form');
