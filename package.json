@@ -5,6 +5,6 @@
     "react-dom": "^18.2.0"
   },
   "scripts": {
-    "backend": "json-server --watch db/db.json"
+    "backend": "json-server --watch db/db.json --PORT 5000"
   }
 }
