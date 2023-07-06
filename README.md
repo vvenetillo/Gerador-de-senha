@@ -14,8 +14,9 @@ Este é um projeto de um gerador de senha simples usando HTML, CSS e JavaScript.
 2. Abra o arquivo `index.html` no seu navegador.
 3. Preencha o formulário de registro com seu nome, e-mail e senha.
 4. Clique no botão "Cadastrar" para enviar os dados para o backend.
-5. Uma senha segura será gerada automaticamente ao clicar no link "Clique aqui".
-6. Os dados enviados serão registrados no servidor JSON usando JSON Server.
+5. Use "npm run backend" para rodar o localhost.
+6. Uma senha segura será gerada automaticamente ao clicar no link "Clique aqui".
+7. Os dados enviados serão registrados no servidor JSON usando JSON Server.
 
 ## Tecnologias utilizadas
 
