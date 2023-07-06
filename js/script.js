@@ -84,7 +84,7 @@ form.addEventListener('submit', (e) => {
     email
   };
 
-  fetch('http://localhost:3000/usuarios', {
+  fetch('http://localhost:5000/usuarios', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
